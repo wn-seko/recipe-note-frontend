@@ -69,7 +69,7 @@ module.exports = {
   plugins: [
     new HtmlPlugin({
       template: './src/index.html',
-      // favicon: 'src/assets/images/favicon.ico',
+      favicon: './src/assets/images/favicon.ico',
     }),
     new Copy({
       patterns: [
