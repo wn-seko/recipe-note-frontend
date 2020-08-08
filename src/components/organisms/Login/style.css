@@ -1,0 +1,17 @@
+.icon {
+  width: 200px !important;
+}
+
+.container {
+  padding-top: 150px;
+}
+
+.loginSegment {
+  max-width: 450px;
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+
+.inputBox {
+  margin-bottom: 20px;
+}
