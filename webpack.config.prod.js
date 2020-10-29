@@ -3,7 +3,7 @@ const webpack = require('webpack')
 const merge = require('webpack-merge').merge
 const common = require('./webpack.config.common.js')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
-const API_URL = 'https://api-portal.orutaoyama.com'
+const API_URL = 'https://api-attendance.orutaoyama.com'
 
 const moduleMerged = merge(common, {
   module: {

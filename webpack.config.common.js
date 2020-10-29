@@ -76,6 +76,7 @@ module.exports = {
         { from: 'node_modules/normalize.css/normalize.css', to: 'assets/' },
         { from: 'node_modules/semantic-ui-css/semantic.min.css', to: 'assets/' },
         { from: 'node_modules/semantic-ui-css/themes/default/assets/', to: 'assets/themes/default/assets/' },
+        { from: 'node_modules/react-calendar/dist/Calendar.css', to: 'assets/' },
         // { from: 'node_modules/react-datepicker/dist/react-datepicker.css', to: 'assets/' },
         // { from: 'node_modules/rc-time-picker/assets/index.css', to: 'assets/rc-time-picker.css' },
       ],
@@ -84,6 +85,7 @@ module.exports = {
       tags: [
         'assets/normalize.css',
         'assets/semantic.min.css',
+        'assets/Calendar.css',
         // 'assets/react-datepicker.css',
         // 'assets/rc-time-picker.css',
       ],

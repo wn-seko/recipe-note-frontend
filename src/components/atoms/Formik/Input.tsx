@@ -124,7 +124,7 @@ export const FormikDropdown = (props: DropdownProps & FieldAttributes<any>) => {
         {...rest}
         name={field.name}
         onChange={handleChange}
-        value={field.value}
+        defaultValue={field.value}
         options={options}
         className={isError ? `${className} ${errorField}` : className}
         error={isError}
@@ -145,6 +145,26 @@ export const FormikSelectLabel = (props: DropdownProps & FieldAttributes<any>) =
     {...props}
   />
 )
+
+export const FormikTagInput = (props: DropdownProps & FieldAttributes<any>) => {
+  const { options, ...rest } = props
+
+  const handleAddition = (_: React.KeyboardEvent<HTMLElement>, { value }: DropdownProps) => {
+    if (typeof value === 'string') {
+      options.push({ key: value, value, text: value })
+    }
+  }
+
+  return (
+    <FormikSelectLabel
+      allowAdditions={true}
+      additionLabel="タグを追加"
+      options={options}
+      onAddItem={handleAddition}
+      {...rest}
+    />
+  )
+}
 
 export const FormikDropSelect = (props: DropdownProps & FieldAttributes<any>) => (
   <FormikDropdown compact={true} fluid={true} search={true} selection={true} scrolling={true} {...props} />
